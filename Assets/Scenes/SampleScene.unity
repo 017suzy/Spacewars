@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 504209994}
   - component: {fileID: 504209998}
   - component: {fileID: 504209997}
+  - component: {fileID: 504209999}
   m_Layer: 0
   m_Name: nave_0
   m_TagString: Untagged
@@ -296,6 +297,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &504209999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504209993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5028fb0d9d54e54d9feac6d916c3b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7314217131294660141, guid: bec07a3c72f605b4d828b61a5f5deec7, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
