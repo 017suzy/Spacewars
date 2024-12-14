@@ -35,8 +35,8 @@ public class Inimigo2Movimento : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "barreira"){
-            moveSpeed = moveSpeed * -1;
+        if(other.gameObject.tag == "player"){
+            //fazer a destruição
         }
         
     }
