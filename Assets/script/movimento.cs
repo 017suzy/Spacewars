@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enime3mov : MonoBehaviour
 {
-    public float speed = 1;
+    public float speed = 5;
     public float timer = 0;
     public bool direita = true;
     public bool esquerda = false;
