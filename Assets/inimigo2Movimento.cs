@@ -35,8 +35,13 @@ public class Inimigo2Movimento : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "player"){
-            //fazer a destruição
+        if(other.gameObject.tag == "Player"){
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.tag == "balaPlayer"){
+            Destroy(gameObject);
         }
         
     }

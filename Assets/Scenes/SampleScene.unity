@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 504209999}
   m_Layer: 0
   m_Name: nave_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,6 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2099daf1b586bbb4a88a424d48debb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  cronometer: 2
 --- !u!1 &1951977034
 GameObject:
   m_ObjectHideFlags: 0
