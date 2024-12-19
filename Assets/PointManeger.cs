@@ -11,6 +11,6 @@ public class PointManeger : MonoBehaviour
 
     public void UpdateScore(int points){
         score += points;
-        scoreText.text= "Pontuaçao: " + score;
+        scoreText.text= "SCORE: " + score;
     }
 }
