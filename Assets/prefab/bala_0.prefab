@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2368127351752917010}
   - component: {fileID: 9186533081622850198}
   - component: {fileID: 2138286641152173545}
+  - component: {fileID: 502696506146703788}
   m_Layer: 0
   m_Name: bala_0
   m_TagString: balaPlayer
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7314217131294660141}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,3 +102,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+--- !u!61 &502696506146703788
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314217131294660141}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.07986382, y: 0.05271557}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0.25, z: 0.6875, w: 0.6875}
+    pivot: {x: 0.3809524, y: 0.46987948}
+    oldSize: {x: 0.75, y: 1.59375}
+    newSize: {x: 2.6875, y: 2.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.825376, y: 1.6785481}
+  m_EdgeRadius: 0
