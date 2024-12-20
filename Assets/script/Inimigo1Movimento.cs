@@ -25,12 +25,11 @@ public class Inimigo1Movimento : MonoBehaviour
     {
         if(other.gameObject.tag == "Player"){
             Destroy(gameObject);
-            Destroy(other.gameObject);
         }
         
         if(other.gameObject.tag == "balaPlayer"){
             Destroy(gameObject);
         }
-        
+    
     }
 }
