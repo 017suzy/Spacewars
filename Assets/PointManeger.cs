@@ -19,14 +19,6 @@ public class PointManeger : MonoBehaviour
 
     public void UpdateScore(int points){
         score += points;
-<<<<<<< Updated upstream
         scoreText.text= "Pontuaçao: " + score;
-=======
-        scoreText.text= "SCORE: " + score;
-        if (highscore<score)
-        {
-            PlayerPrefs.SetInt("highscore", score);
-        }
->>>>>>> Stashed changes
     }
 }
