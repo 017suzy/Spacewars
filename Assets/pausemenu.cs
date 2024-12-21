@@ -1,15 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pausemenu : MonoBehaviour
 {
 
-    private bool isPaused;
+    public bool isPaused = false;
     public GameObject pausePanel;
+    public nave_atirando ShooterAgent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 
     // Update is called once per frame
@@ -26,15 +29,24 @@ public class pausemenu : MonoBehaviour
     }
 
     public void PausedGame(){
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
         isPaused = true;
         pausePanel.SetActive(true);
+        ShooterAgent.AllowedToShoot = false;
     }
 
     public void ResumeGame() {
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
         isPaused = false;
         pausePanel.SetActive(false);
+        ShooterAgent.AllowedToShoot = true;
     }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
 
