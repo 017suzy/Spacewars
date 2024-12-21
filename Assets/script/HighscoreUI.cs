@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Eva.Scoreboard{
     [Serializable]
-    public struct ScoreboardEntry{
+    public struct HighscoreUI{
         public string entryName;
         public int entryScore;
 

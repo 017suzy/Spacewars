@@ -10,6 +10,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Creditos");
     }
 
+    public void Highscore(){
+        SceneManager.LoadScene("highscore");
+    }
+
     public void BackToMenu(){
         SceneManager.LoadScene("MainMenu");
     }
