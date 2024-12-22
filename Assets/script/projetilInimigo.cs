@@ -17,7 +17,10 @@ public class projetilInimigo : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
         {
-            if(other.gameObject.tag == "Player" || other.gameObject.tag == "barreira"){
+            if(other.gameObject.tag == "Player"){
+                Destroy(gameObject);
+            }
+            if(other.gameObject.tag == "barreira"){
                 Destroy(gameObject);
             }
         }

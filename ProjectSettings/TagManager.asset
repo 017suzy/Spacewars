@@ -5,9 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - barreira
-  - balaPlayer
   - Enemy
-  - balaInimigo
   layers:
   - Default
   - TransparentFX

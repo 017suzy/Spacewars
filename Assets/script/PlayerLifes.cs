@@ -1,8 +1,6 @@
 
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
 
 public class PlayerLifes : MonoBehaviour
 {
@@ -22,26 +20,23 @@ public class PlayerLifes : MonoBehaviour
         
     }
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "balaInimigo")
+        if(collision.collider.gameObject.tag == "Enemy")
         {  
-            
+            Destroy(collision.collider.gameObject);
             lives -= 1;
-            Destroy(collision.gameObject);
             for(int i = 0; i < livesUI.Length; i++){
-                if( i < lives ){
+                if(i < lives){
                     livesUI[i].enabled = true;
-                }                
-                else{
+                }else{
                     livesUI[i].enabled = false;
                 }
             }
-            if(lives <= 0){
+            if(lives <= 0)
+            {
                 Destroy(gameObject);
             }
-          
         }
-        
     }
 }
