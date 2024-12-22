@@ -4,13 +4,15 @@ using UnityEngine.SceneManagement;
 public class pausemenu : MonoBehaviour
 {
 
-    public nave_atirando ShooterAgent;
     public bool isPaused = false;
-    public GameObject pausePanel; //if there was static = you would have to click twice in the button to work (forcing change)
+    public GameObject pausePanel;
+    public nave_atirando ShooterAgent;
 
-    void Start () {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
         Time.timeScale = 1f;
-        pausePanel.SetActive(false);
+        isPaused = false;
     }
 
     // Update is called once per frame
@@ -19,39 +21,32 @@ public class pausemenu : MonoBehaviour
         if (Input.GetButtonDown("Pause")){
 
             if (isPaused)
-            {
-
                 ResumeGame();
-            }
             else
-            {
                 PausedGame();
-            }
         }
         
     }
 
     public void PausedGame(){
-        
-        pausePanel.SetActive(true);
-        isPaused = true;
         Time.timeScale = 0f;
+        isPaused = true;
+        pausePanel.SetActive(true);
         ShooterAgent.AllowedToShoot = false;
     }
 
     public void ResumeGame() {
-        
-        pausePanel.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        pausePanel.SetActive(false);
         ShooterAgent.AllowedToShoot = true;
     }
 
     public void BackToMenu()
     {
-        Time.timeScale = 1f; //make the game unpaused when going back to menu
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
-        
     }
+
 }
 

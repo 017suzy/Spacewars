@@ -12,6 +12,7 @@ public class PointManeger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //only in my computer
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = "SCORE:" + score.ToString();
         highscoreText.text = "HIGHSCORE:" + highscore.ToString();
@@ -19,6 +20,10 @@ public class PointManeger : MonoBehaviour
 
     public void UpdateScore(int points){
         score += points;
-        scoreText.text= "Pontuaçao: " + score;
+        scoreText.text= "SCORE: " + score;
+        if (highscore<score)
+        {
+            PlayerPrefs.SetInt("highscore", score);
+        }
     }
 }
