@@ -30,10 +30,6 @@ public class Inimigo1Movimento : MonoBehaviour
         if(other.gameObject.tag == "balaPlayer"){
             Destroy(gameObject);
         }
-
-        if(other.gameObject.tag == "barreira"){
-            moveSpeed = moveSpeed * -1;
-        }
         
     
     }
