@@ -7,6 +7,7 @@ public class Inimigo2Movimento : MonoBehaviour
 {
     public float moveSpeed = 5;
     public float cronometer = 2;
+     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,32 +17,16 @@ public class Inimigo2Movimento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cronometer>0 && cronometer!=3){
-            transform.Translate( Vector2.down * moveSpeed * Time.deltaTime);
-            cronometer -= Time.deltaTime;
-        }        
-        else{
-            while(cronometer<=3){
-                moveSpeed = moveSpeed * -1;
-                cronometer += Time.deltaTime;
-            }
-            
-            
-        }
-
-        
+        transform.Translate( Vector2.down * moveSpeed * Time.deltaTime);
+        cronometer -= Time.deltaTime;                
     }
 
     
-void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.tag == "Player"){
+void OnTriggerEnter2D(Collider2D other)    {
+     {
+        if(other.gameObject.tag == "Player" || other.gameObject.tag =="balaPlayer" || other.gameObject.tag =="barreira"){            
             Destroy(gameObject);
         }
-        
-        if(other.gameObject.tag == "balaPlayer"){
-            Destroy(gameObject);
-        }
-    
     }
+}
 }

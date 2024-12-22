@@ -6,6 +6,8 @@ TagManager:
   tags:
   - barreira
   - balaPlayer
+  - Enemy
+  - balaInimigo
   layers:
   - Default
   - TransparentFX
