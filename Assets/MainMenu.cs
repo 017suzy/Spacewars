@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Restart(){
+        SceneManager.LoadScene("SampleScene");
+    }
+
     public void QuitGame(){
         Debug.Log("Quitting Game...");
         Application.Quit();

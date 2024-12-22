@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerLifes : MonoBehaviour
 {
@@ -38,7 +39,9 @@ public class PlayerLifes : MonoBehaviour
                 }
             }
             if(lives <= 0){
+                Debug.Log("You're Dead");
                 Destroy(gameObject);
+                SceneManager.LoadScene("gameover");
             }
           
         }
