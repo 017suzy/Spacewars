@@ -22,11 +22,12 @@ public class Inimigo2Movimento : MonoBehaviour
     }
 
     
-void OnTriggerEnter2D(Collider2D other)    {
+    void OnTriggerEnter2D(Collider2D other){
      {
-        if(other.gameObject.tag == "Player" || other.gameObject.tag =="balaPlayer" || other.gameObject.tag =="barreira"){            
+        if(other.gameObject.tag == "Player" || other.gameObject.tag =="balaPlayer"){    //|| other.gameObject.tag =="barreira" 
             Destroy(gameObject);
         }
     }
 }
+
 }

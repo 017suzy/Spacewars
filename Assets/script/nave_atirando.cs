@@ -24,6 +24,16 @@ public class nave_atirando : MonoBehaviour
     {
         AllowedToShoot = status;
     }
-    
+
+    void OnTriggerEnter2D(Collider2D other){
+     {
+        if(other.gameObject.tag =="barreira"){
+            Destroy(gameObject);
+        }
+    }
 }
+
+}
+    
+
 
