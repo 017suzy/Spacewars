@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bdeaa9f2074e1248a924efacce70075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cronometer: 5
+  cronometer: 2
   projectilePrefab: {fileID: 7314217131294660141, guid: 30e9a190779c1d04ead33181ca3ed3a7, type: 3}
 --- !u!114 &195915731
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6bf53060eb388b44b4f0fde65106a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 2
 --- !u!1 &305553081
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -1752,7 +1752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -2594,7 +2594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3167,7 +3167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3284,7 +3284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3445,7 +3445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3695,7 +3695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
