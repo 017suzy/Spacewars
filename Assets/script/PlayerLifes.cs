@@ -11,6 +11,7 @@ public class PlayerLifes : MonoBehaviour
     public int lives = 3;
     public Image[] livesUI;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +23,8 @@ public class PlayerLifes : MonoBehaviour
     {
         
     }
+
+ 
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,19 +32,12 @@ public class PlayerLifes : MonoBehaviour
         {  
             
             lives -= 1;
-            Destroy(collision.gameObject);
-            for(int i = 0; i < livesUI.Length; i++){
-                if( i < lives ){
-                    livesUI[i].enabled = true;
-                }                
-                else{
-                    livesUI[i].enabled = false;
-                }
-            }
+            Destroy(collision.gameObject);          
             if(lives <= 0){
                 Debug.Log("You're Dead");
                 Destroy(gameObject);
                 SceneManager.LoadScene("gameover");
+                
             }
           
         }
