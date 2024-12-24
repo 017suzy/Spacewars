@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bdeaa9f2074e1248a924efacce70075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cronometer: 2
+  cronometer: 5
   projectilePrefab: {fileID: 7314217131294660141, guid: 30e9a190779c1d04ead33181ca3ed3a7, type: 3}
 --- !u!114 &195915731
 MonoBehaviour:
@@ -385,6 +385,7 @@ GameObject:
   - component: {fileID: 305553082}
   - component: {fileID: 305553084}
   - component: {fileID: 305553083}
+  - component: {fileID: 305553085}
   m_Layer: 5
   m_Name: Lives (1)
   m_TagString: Untagged
@@ -431,7 +432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5631019417131958047, guid: 46737867f342c8a4b9bc78dc122fae5a, type: 3}
+  m_Sprite: {fileID: -7034984210369593018, guid: 5dc151bb923ae2644b90030f2bfad7d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -449,6 +450,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305553081}
   m_CullTransparentMesh: 1
+--- !u!114 &305553085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305553081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecacf37a09c21847bf97ecb11713783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pLive: {fileID: 504210000}
+  vidasOn: {fileID: 0}
+  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
+  SpriteRenderer: {fileID: 0}
+  vidaAtual: {fileID: 0}
 --- !u!1 &351274769
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -990,7 +1008,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2684909623895860987, guid: 4a8711b65954c5c42a98e69768dc1cae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1844,7 +1862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -2004,6 +2022,7 @@ GameObject:
   - component: {fileID: 1116139533}
   - component: {fileID: 1116139535}
   - component: {fileID: 1116139534}
+  - component: {fileID: 1116139536}
   m_Layer: 5
   m_Name: Lives (2)
   m_TagString: Untagged
@@ -2027,7 +2046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358, y: 154}
+  m_AnchoredPosition: {x: 358.3, y: 154.6}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116139534
@@ -2050,7 +2069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8217395928502820547, guid: daaac44ab90e6ca47a1c1ab39e72ea01, type: 3}
+  m_Sprite: {fileID: -7034984210369593018, guid: 5dc151bb923ae2644b90030f2bfad7d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2068,6 +2087,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116139532}
   m_CullTransparentMesh: 1
+--- !u!114 &1116139536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116139532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af97648bc28a7c94b8fd894c49226541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pLive: {fileID: 504210000}
+  vidasOn: {fileID: 0}
+  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
+  SpriteRenderer: {fileID: 0}
+  vidaAtual: {fileID: 0}
 --- !u!1 &1168486271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,7 +2911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3082,6 +3118,7 @@ GameObject:
   - component: {fileID: 1894728443}
   - component: {fileID: 1894728445}
   - component: {fileID: 1894728444}
+  - component: {fileID: 1894728446}
   m_Layer: 5
   m_Name: Lives
   m_TagString: Untagged
@@ -3128,7 +3165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8217395928502820547, guid: daaac44ab90e6ca47a1c1ab39e72ea01, type: 3}
+  m_Sprite: {fileID: -7034984210369593018, guid: 5dc151bb923ae2644b90030f2bfad7d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3146,6 +3183,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894728442}
   m_CullTransparentMesh: 1
+--- !u!114 &1894728446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894728442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997c80624786fd2439d8cd522c27a39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pLive: {fileID: 504210000}
+  vidasOn: {fileID: 0}
+  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
+  SpriteRenderer: {fileID: 0}
+  vidaAtual: {fileID: 0}
 --- !u!1 &1896135874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,7 +3638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3701,7 +3755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -3862,7 +3916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -4112,7 +4166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: speed
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1302210687281706161, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
       propertyPath: timer
@@ -4286,10 +4340,6 @@ PrefabInstance:
     - target: {fileID: 6118429188898464250, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: m_Color.r
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6118429188898464250, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6118429188898464250, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: m_MaskInteraction
