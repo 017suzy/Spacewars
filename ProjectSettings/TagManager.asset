@@ -8,6 +8,7 @@ TagManager:
   - balaPlayer
   - Enemy
   - balaInimigo
+  - enemyBoss
   layers:
   - Default
   - TransparentFX

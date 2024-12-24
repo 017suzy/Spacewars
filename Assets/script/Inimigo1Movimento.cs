@@ -37,15 +37,8 @@ public class inimigo2Movimento : MonoBehaviour
         if (other.gameObject.tag =="barreira")
         {
             dirX *= -1f;  
-        }
-
-        if(other.gameObject.tag == "Player"){
-            Destroy(gameObject);
-        }
-        
-        if(other.gameObject.tag == "balaPlayer"){
-            Destroy(gameObject);
-        }        
+        }       
+                
     
     }
 

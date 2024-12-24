@@ -23,8 +23,10 @@ public class atirar : MonoBehaviour
             pointManager.UpdateScore(50);
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "barreira"){
+        if (collision.gameObject.tag == "barreira" || collision.gameObject.tag == "enemyBoss"){
              Destroy(gameObject);
        }
+       
     }
+
 }
