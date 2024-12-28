@@ -3116,14 +3116,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a6c6044ce8c5640a18ea31fb672904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemytype1: {fileID: 914973921498165096, guid: 2ac6e05426851dd4eac867286b534e30, type: 3}
-  Enemytype2: {fileID: 2473491790688861958, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
+  enemyType1: {fileID: 914973921498165096, guid: 2ac6e05426851dd4eac867286b534e30, type: 3}
+  enemyType2: {fileID: 2473491790688861958, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
+  enemyType3: {fileID: 681852008574443237, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
   minX: -9
   maxX: 9
-  minY: 0
-  maxY: 3.75
+  minY: 2
+  maxY: 4
   spawnInterval: 2
   maxEnemies: 10
+  fixedSpawnPosition: {x: -8, y: 4}
 --- !u!1 &1896135874
 GameObject:
   m_ObjectHideFlags: 0
