@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Inimigo3Movimento : MonoBehaviour
+public class Inimigo3Mov : MonoBehaviour
 {
     public float descentSpeed = 3f; // Velocidade de descida
     public float rotationSpeed = 50f; // Velocidade do movimento circular
@@ -42,3 +42,4 @@ public class Inimigo3Movimento : MonoBehaviour
         }
     }
 }
+

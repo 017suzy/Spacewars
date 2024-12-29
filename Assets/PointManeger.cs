@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class PointManeger : MonoBehaviour
 {   
     public int score = 0;
@@ -25,5 +26,8 @@ public class PointManeger : MonoBehaviour
         {
             PlayerPrefs.SetInt("highscore", score);
         }
+        
+        //if (score > 200)
+        //    SceneManager.LoadScene("BOSSFIGHT");
     }
 }
