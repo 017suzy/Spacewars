@@ -3171,8 +3171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType1: {fileID: 914973921498165096, guid: 2ac6e05426851dd4eac867286b534e30, type: 3}
-  enemyType2: {fileID: 3305201542906143607, guid: 1d1b496bec8b02c4eb1eb38dca1b6d59, type: 3}
-  enemyType3: {fileID: 914973921498165096, guid: 2ac6e05426851dd4eac867286b534e30, type: 3}
+  enemyType2: {fileID: 0}
+  enemyType3: {fileID: 0}
   spawnInterval: 2
   maxEnemies: 10
 --- !u!1 &1896135874

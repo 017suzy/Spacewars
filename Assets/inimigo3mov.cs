@@ -1,45 +1,121 @@
 using UnityEngine;
 
-public class Inimigo3Mov : MonoBehaviour
+public class Enemy3Movement : MonoBehaviour
 {
-    public float descentSpeed = 3f; // Velocidade de descida
-    public float rotationSpeed = 50f; // Velocidade do movimento circular
-    public Vector2 centerPosition = new Vector2(0f, 2f); // Posição central para o movimento circular
-    public float radius = 2f; // Raio do movimento circular
+    public float speed = 5f; // Velocidade do movimento reto para baixo
+    public float rectangleSpeed = 3f; // Velocidade do movimento no retângulo
+    public float rectangleWidth = 6f; // Comprimento no eixo X (lado maior)
+    public float rectangleHeight = 2f; // Comprimento no eixo Y (lado menor)
 
-    private bool isRotating = false; // Indica se o objeto está no movimento circular
-    private float angle = 0f; // Ângulo atual do movimento circular
+    private int stopY; // Posição Y onde o inimigo para ao descer
+    private bool isEnteringScene = true; // Indica se está descendo para entrar na cena
+    private bool isRectangleMovement = false; // Indica se está no movimento retangular
 
-    private void Update()
+    private Vector3 startPosition; // Posição inicial do movimento retangular
+    private Vector3 targetPosition; // Próxima posição no movimento retangular
+    private int rectangleStep = 0; // Etapa atual no movimento retangular
+
+    void Start()
     {
-        if (!isRotating)
+        // Determina aleatoriamente o valor de Y de parada (4, 3 ou 2)
+        stopY = Random.Range(0, 3) switch
         {
-            // Movimento descendente até a posição central
-            transform.position = Vector2.MoveTowards(transform.position, centerPosition, descentSpeed * Time.deltaTime);
+            0 => 4,
+            1 => 3,
+            _ => 2
+        };
+    }
 
-            // Verifica se chegou à posição central
-            if (Vector2.Distance(transform.position, centerPosition) < 0.1f)
-            {
-                isRotating = true; // Inicia o movimento circular
-            }
+    void Update()
+    {
+        if (isEnteringScene)
+        {
+            MoveStraightDown();
+        }
+        else if (!isRectangleMovement)
+        {
+            PerformInitialMovements();
         }
         else
         {
-            // Movimento circular
-            angle += rotationSpeed * Time.deltaTime; // Atualiza o ângulo
-            float radianAngle = Mathf.Deg2Rad * angle; // Converte o ângulo para radianos
+            PerformRectangleMovement();
+        }
+    }
 
-            // Calcula a posição do objeto com base no ângulo
-            float x = centerPosition.x + Mathf.Cos(radianAngle) * radius;
-            float y = centerPosition.y + Mathf.Sin(radianAngle) * radius;
-            transform.position = new Vector2(x, y);
+    private void MoveStraightDown()
+    {
+        // Movimento reto para baixo
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
 
-            // Mantém o ângulo entre 0 e 360 graus
-            if (angle >= 360f)
-            {
-                angle -= 360f;
-            }
+        // Verifica se atingiu o Y de parada
+        if (transform.position.y <= stopY)
+        {
+            isEnteringScene = false; // Parar o movimento reto
+        }
+    }
+
+    private void PerformInitialMovements()
+    {
+        // Primeiro movimento: horizontal
+        if (targetPosition == Vector3.zero)
+        {
+            targetPosition = transform.position.x < 0
+                ? transform.position + new Vector3(rectangleWidth / 2, 0, 0) // Para direita
+                : transform.position - new Vector3(rectangleWidth / 2, 0, 0); // Para esquerda
+        }
+
+        // Mover em direção ao alvo
+        MoveToTarget();
+
+        // Após concluir o primeiro movimento
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            // Segundo movimento: vertical
+            targetPosition = stopY == 2
+                ? transform.position + new Vector3(0, rectangleHeight / 2, 0) // Para cima
+                : transform.position - new Vector3(0, rectangleHeight / 2, 0); // Para baixo
+
+            isRectangleMovement = true; // Transição para o movimento retangular
+            startPosition = transform.position; // Define o ponto inicial do retângulo
+            SetNextRectangleTarget();
+        }
+    }
+
+    private void PerformRectangleMovement()
+    {
+        MoveToTarget();
+
+        // Verifica se alcançou o alvo
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            rectangleStep = (rectangleStep + 1) % 4; // Avança para o próximo passo (0 a 3)
+            SetNextRectangleTarget(); // Define o próximo alvo
+        }
+    }
+
+    private void MoveToTarget()
+    {
+        // Move o inimigo em direção ao alvo
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, rectangleSpeed * Time.deltaTime);
+    }
+
+    private void SetNextRectangleTarget()
+    {
+        // Define a próxima posição no movimento retangular com base na etapa atual
+        switch (rectangleStep)
+        {
+            case 0: // Movimento para a direita
+                targetPosition = startPosition + new Vector3(rectangleWidth, 0, 0);
+                break;
+            case 1: // Movimento para baixo
+                targetPosition = startPosition + new Vector3(rectangleWidth, -rectangleHeight, 0);
+                break;
+            case 2: // Movimento para a esquerda
+                targetPosition = startPosition + new Vector3(0, -rectangleHeight, 0);
+                break;
+            case 3: // Movimento para cima (volta ao início)
+                targetPosition = startPosition;
+                break;
         }
     }
 }
-

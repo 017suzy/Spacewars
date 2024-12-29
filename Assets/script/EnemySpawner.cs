@@ -30,26 +30,23 @@ public class EnemySpawner : MonoBehaviour
         if (enemyType == 1)
         {
             enemyToSpawn = enemyType1;
-            spawnPosition = new Vector2(
-                Random.Range(-9f, 9f), // Intervalo X
-                Random.Range(4f, 6f) // Intervalo Y
-            );
+            spawnPosition = new Vector2(Random.Range(-8f, 8f), 6f);
         }
         else if (enemyType == 2)
         {
             enemyToSpawn = enemyType2;
-            spawnPosition = new Vector2(
-                Random.Range(-9f, 9f), // Intervalo X
-                Random.Range(2f, 4f) // Intervalo Y
-            );
+
+            // X é -10 ou 10, Y é 2, 3 ou 4
+            float spawnX = Random.Range(0, 2) == 0 ? -8f : 8f; // Define X
+            float[] yOptions = { 2f, 3f, 4f }; // Opções fixas para Y
+            float spawnY = yOptions[Random.Range(0, yOptions.Length)];
+
+            spawnPosition = new Vector2(spawnX, spawnY);
         }
-        else // Tipo 3\
+        else // Tipo 3
         {
             enemyToSpawn = enemyType3;
-            spawnPosition = new Vector2(
-                Random.Range(-7f, 7f), // Intervalo X exclusivo
-                Random.Range(4f, 6f) // Intervalo Y
-            );
+            spawnPosition = new Vector2(Random.Range(-8f, 8f), 6f);
         }
 
         // Cria o inimigo na posição gerada
