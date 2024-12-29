@@ -4,7 +4,7 @@ public class Inimigo3Movimento : MonoBehaviour
 {
     public float descentSpeed = 3f; // Velocidade de descida
     public float rotationSpeed = 50f; // Velocidade do movimento circular
-    public Vector2 centerPosition = new Vector2(0f, 4f); // Posição central para o movimento circular
+    public Vector2 centerPosition = new Vector2(0f, 2f); // Posição central para o movimento circular
     public float radius = 2f; // Raio do movimento circular
 
     private bool isRotating = false; // Indica se o objeto está no movimento circular

@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
             enemyToSpawn = enemyType1;
             spawnPosition = new Vector2(
                 Random.Range(-9f, 9f), // Intervalo X
-                Random.Range(4f, 10f) // Intervalo Y
+                Random.Range(4f, 6f) // Intervalo Y
             );
         }
         else if (enemyType == 2)
@@ -40,15 +40,15 @@ public class EnemySpawner : MonoBehaviour
             enemyToSpawn = enemyType2;
             spawnPosition = new Vector2(
                 Random.Range(-9f, 9f), // Intervalo X
-                Random.Range(4f, 10f) // Intervalo Y
+                Random.Range(2f, 4f) // Intervalo Y
             );
         }
-        else // Tipo 3
+        else // Tipo 3\
         {
             enemyToSpawn = enemyType3;
             spawnPosition = new Vector2(
-                Random.Range(-6f, 6f), // Intervalo X exclusivo
-                Random.Range(4f, 10f) // Intervalo Y
+                Random.Range(-7f, 7f), // Intervalo X exclusivo
+                Random.Range(4f, 6f) // Intervalo Y
             );
         }
 
