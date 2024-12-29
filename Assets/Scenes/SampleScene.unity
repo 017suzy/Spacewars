@@ -3121,8 +3121,8 @@ MonoBehaviour:
   enemyType3: {fileID: 681852008574443237, guid: 09bd243300eb5014c9c84d67a554f83f, type: 3}
   minX: -9
   maxX: 9
-  minY: 2
-  maxY: 4
+  minY: 1.5
+  maxY: 2.5
   spawnInterval: 2
   maxEnemies: 10
   fixedSpawnPosition: {x: -8, y: 4}
