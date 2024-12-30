@@ -1,8 +1,11 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+
 public class PointManeger : MonoBehaviour
 {   
+
+    [SerializeField] private FloatSO scoreSO;
     public int score = 0;
     public int highscore = 0;
 
@@ -15,19 +18,17 @@ public class PointManeger : MonoBehaviour
     {
         //only in my computer
         highscore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = "SCORE:" + score.ToString();
+        scoreText.text = "SCORE:" + scoreSO.Value;
         highscoreText.text = "HIGHSCORE:" + highscore.ToString();
     }
 
     public void UpdateScore(int points){
-        score += points;
-        scoreText.text= "SCORE: " + score;
+        scoreSO.Value += points;
+        scoreText.text= "SCORE: " + scoreSO.Value;
         if (highscore<score)
         {
             PlayerPrefs.SetInt("highscore", score);
         }
-        
-        //if (score > 200)
-        //    SceneManager.LoadScene("BOSSFIGHT");
+
     }
 }
