@@ -540,7 +540,7 @@ Transform:
   m_GameObject: {fileID: 351274769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.02, y: 5.63, z: 0.030812616}
+  m_LocalPosition: {x: -14.35, y: 5.06, z: 0.030812616}
   m_LocalScale: {x: 1, y: 5.7012243, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -554,13 +554,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 427555219}
     m_Modifications:
+    - target: {fileID: -5199490432404755942, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.87
+      value: -21.07
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.25
+      value: -4.86
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -597,6 +601,18 @@ PrefabInstance:
     - target: {fileID: 2927678936838830670, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_Name
       value: inimigo3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: timer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: rectangleWidth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -880,7 +896,7 @@ Transform:
   m_GameObject: {fileID: 504209993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -8.63, z: 0}
+  m_LocalPosition: {x: -0.25, y: -8.63, z: 0}
   m_LocalScale: {x: 1.6338, y: 1.6536, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1366,13 +1382,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 427555219}
     m_Modifications:
+    - target: {fileID: -5199490432404755942, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.03
+      value: -8.2699995
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.87
+      value: -4.69
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1409,6 +1429,18 @@ PrefabInstance:
     - target: {fileID: 2927678936838830670, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_Name
       value: inimigo3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: timer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: rectangleWidth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2080,13 +2112,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 427555219}
     m_Modifications:
+    - target: {fileID: -5199490432404755942, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.17
+      value: -15.14
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.11
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2123,6 +2159,18 @@ PrefabInstance:
     - target: {fileID: 2927678936838830670, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_Name
       value: inimigo3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: timer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: rectangleWidth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2638,13 +2686,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 427555219}
     m_Modifications:
+    - target: {fileID: -5199490432404755942, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.49
+      value: 2.9199998
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.09
+      value: -4.7000003
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2681,6 +2733,18 @@ PrefabInstance:
     - target: {fileID: 2927678936838830670, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_Name
       value: inimigo3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: timer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: rectangleWidth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3509,7 +3573,7 @@ Transform:
   m_GameObject: {fileID: 1947472102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.03, y: 5.63, z: 0.030812616}
+  m_LocalPosition: {x: 14.77, y: 4.6, z: 0.030812616}
   m_LocalScale: {x: 1, y: 5.7012243, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3991,13 +4055,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 781737795661155086, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2261891901988370171, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 2261891901988370171, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.25
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 2261891901988370171, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4056,13 +4124,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 427555219}
     m_Modifications:
+    - target: {fileID: -5199490432404755942, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.64
+      value: -1.75
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.79
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 1789841401008278706, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4099,6 +4171,18 @@ PrefabInstance:
     - target: {fileID: 2927678936838830670, guid: e2cd6737512d99b4683040684d14141b, type: 3}
       propertyPath: m_Name
       value: inimigo3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5674869549416170965, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756036194422088793, guid: e2cd6737512d99b4683040684d14141b, type: 3}
+      propertyPath: rectangleWidth
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
