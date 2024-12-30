@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   cronometer: 2
+  explosionPrefab: {fileID: 7770337835433022115, guid: 8eb4583b2ce66ae4cb57cf4889c4d2e8, type: 3}
 --- !u!212 &6106452865058520184
 SpriteRenderer:
   m_ObjectHideFlags: 0
