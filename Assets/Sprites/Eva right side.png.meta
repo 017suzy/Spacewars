@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Eva right side_0: -1530144151208112184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
