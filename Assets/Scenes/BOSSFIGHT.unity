@@ -963,7 +963,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1879,7 +1879,7 @@ Transform:
   m_GameObject: {fileID: 817372935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.8, y: -0.061347, z: 0.030812616}
+  m_LocalPosition: {x: -19.37, y: -0.061347, z: 0.030812616}
   m_LocalScale: {x: 1, y: 27.148687, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3023,7 +3023,7 @@ Transform:
   m_GameObject: {fileID: 1672051485}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21, y: -0.061347, z: 0.030812616}
+  m_LocalPosition: {x: 19.35, y: -0.061347, z: 0.030812616}
   m_LocalScale: {x: 1, y: 27.971375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3801,7 +3801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ab04ee247920449b0f0946219484c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreSO: {fileID: 11400000, guid: 065d2fccc6630534fa94f144118445cf, type: 2}
   score: 0
   highscore: 0
   scoreText: {fileID: 1168486273}

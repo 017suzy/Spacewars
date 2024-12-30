@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class PointManeger : MonoBehaviour
 {   
-
-    [SerializeField] private FloatSO scoreSO;
     public int score = 0;
     public int highscore = 0;
 
@@ -18,13 +16,13 @@ public class PointManeger : MonoBehaviour
     {
         //only in my computer
         highscore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = "SCORE:" + scoreSO.Value;
+        scoreText.text = "SCORE:" + score;
         highscoreText.text = "HIGHSCORE:" + highscore.ToString();
     }
 
     public void UpdateScore(int points){
-        scoreSO.Value += points;
-        scoreText.text= "SCORE: " + scoreSO.Value;
+        score += points;
+        scoreText.text= "SCORE: " + score;
         if (highscore<score)
         {
             PlayerPrefs.SetInt("highscore", score);
