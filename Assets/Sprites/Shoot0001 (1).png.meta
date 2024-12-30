@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5dc151bb923ae2644b90030f2bfad7d4
+guid: dfd596f4f03711c4688d6bef3f92a5fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7034984210369593018
-    second: vida on_0
+      213: 1503084525990214270
+    second: Shoot0001 (1)_0
+  - first:
+      213: 189372242074316836
+    second: Shoot0001 (1)_1
+  - first:
+      213: 3616399221035372350
+    second: Shoot0001 (1)_2
+  - first:
+      213: -5643610093648926368
+    second: Shoot0001 (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +105,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vida on_0
+      name: Shoot0001 (1)_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 28
-        height: 28
+        x: 3
+        y: 16
+        width: 54
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64140743227be5e90800000000000000
-      internalID: -7034984210369593018
+      spriteID: e7a7807a9670cd410800000000000000
+      internalID: 1503084525990214270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot0001 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420b8230d09c0a200800000000000000
+      internalID: 189372242074316836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot0001 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f00d75ee7003230800000000000000
+      internalID: 3616399221035372350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot0001 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0692f3d558edda1b0800000000000000
+      internalID: -5643610093648926368
       vertices: []
       indices: 
       edges: []
@@ -138,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ffa28755be6dae1418ef48d7c97d4ef9
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vida on_0: -7034984210369593018
+      Shoot0001 (1)_0: 1503084525990214270
+      Shoot0001 (1)_1: 189372242074316836
+      Shoot0001 (1)_2: 3616399221035372350
+      Shoot0001 (1)_3: -5643610093648926368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

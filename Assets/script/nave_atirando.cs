@@ -11,13 +11,25 @@ public class nave_atirando : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
+    {   
+        Debug.Log("Update chamado."); // Log básico para verificar o ciclo de vida do script.
+
+    if (Input.GetKeyDown(KeyCode.Space)) // Teste com a barra de espaço.
     {
-        if (AllowedToShoot == false) return;
-        if (Input.GetButtonDown("Fire1")){
+        Debug.Log("Barra de espaço pressionada!"); // Verifica se a entrada está funcionando.
+
+        if (projectilePrefab != null)
+        {
             Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            Debug.Log("Projétil instanciado!");
         }
-        
+        else
+        {
+            Debug.LogError("Prefab do projétil não está atribuído no Inspector!");
+        }
+    }
+
     }
 
     public void AllowShooting(bool status)
