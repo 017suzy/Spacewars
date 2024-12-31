@@ -7,14 +7,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Cutscene");
     }
     public void Credits(){
+        Destroy (GameObject.Find("Canvas"));        
         SceneManager.LoadScene("Creditos");
     }
 
     public void BackToMenu(){
+        Destroy (GameObject.Find("Canvas"));        
         SceneManager.LoadScene("MainMenu");
+
     }
 
     public void Restart(){
+        Destroy (GameObject.Find("Canvas"));        
         SceneManager.LoadScene("SampleScene");
     }
 

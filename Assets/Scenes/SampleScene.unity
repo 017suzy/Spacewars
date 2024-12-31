@@ -799,6 +799,7 @@ GameObject:
   - component: {fileID: 504209997}
   - component: {fileID: 504209999}
   - component: {fileID: 504210000}
+  - component: {fileID: 504210001}
   m_Layer: 0
   m_Name: nave_0
   m_TagString: Player
@@ -994,6 +995,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &504210001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504209993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3125b3fb775b42448b08426eba3ed35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1139,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.05, y: 0.16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1284,6 +1298,7 @@ GameObject:
   - component: {fileID: 638166177}
   - component: {fileID: 638166176}
   - component: {fileID: 638166180}
+  - component: {fileID: 638166181}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1395,6 +1410,19 @@ MonoBehaviour:
   isPaused: 0
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 504209999}
+--- !u!114 &638166181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638166175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3125b3fb775b42448b08426eba3ed35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 1
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0

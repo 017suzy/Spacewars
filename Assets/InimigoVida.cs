@@ -7,6 +7,7 @@ public class InimigoVida : MonoBehaviour
     private PointManeger pointManager;
     public float vida;
     public float vidaCheia = 100;
+    public GameObject explosionPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,7 +35,8 @@ public class InimigoVida : MonoBehaviour
             vida = vida - 2;
 
         }
-        if(vida < 0){            
+        if(vida < 0){ 
+            Instantiate(explosionPrefab,transform.position,Quaternion.identity);           
             Destroy(gameObject);
             pointManager.UpdateScore(100);
             barraVida.enabled = false;

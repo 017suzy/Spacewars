@@ -6,15 +6,21 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class PlayerLifes : MonoBehaviour
-{
+{       
 
+    
     public int lives = 3;
     public Image[] livesUI;
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake(){
+        
+       
+
+    }
     void Start()
     {
+        
         
     }
 
@@ -34,7 +40,7 @@ public class PlayerLifes : MonoBehaviour
             lives -= 1;
             Destroy(collision.gameObject);          
             if(lives <= 0){
-                Debug.Log("You're Dead");
+                Debug.Log("You're Dead");                
                 Destroy(gameObject);
                 SceneManager.LoadScene("gameover");
                 
