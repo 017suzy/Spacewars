@@ -263,7 +263,6 @@ GameObject:
   - component: {fileID: 201416232}
   - component: {fileID: 201416235}
   - component: {fileID: 201416234}
-  - component: {fileID: 201416233}
   m_Layer: 5
   m_Name: Lives (2)
   m_TagString: Untagged
@@ -290,23 +289,6 @@ RectTransform:
   m_AnchoredPosition: {x: 375.80002, y: -157}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &201416233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201416231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af97648bc28a7c94b8fd894c49226541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pLive: {fileID: 0}
-  vidasOn: {fileID: 0}
-  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
-  SpriteRenderer: {fileID: 0}
-  vidaAtual: {fileID: 0}
 --- !u!114 &201416234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,6 +1440,7 @@ MonoBehaviour:
   vidasOn: {fileID: -7034984210369593018, guid: 5dc151bb923ae2644b90030f2bfad7d4, type: 3}
   vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
   heartContainers: {fileID: 11400000, guid: e4920d9768148554291b15df6d7e27cc, type: 2}
+  playerCurrentHealth: {fileID: 11400000, guid: 161f34ccc7c106d4a99ca3d13c5969ad, type: 2}
 --- !u!114 &638166183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,7 +1456,19 @@ MonoBehaviour:
   signal: {fileID: 11400000, guid: a9d9b94f62e9353468f14a256df0441e, type: 2}
   signalEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 638166182}
+        m_TargetAssemblyTypeName: HeartManager, Assembly-CSharp
+        m_MethodName: UpdateHearts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2394,6 @@ GameObject:
   - component: {fileID: 1477288768}
   - component: {fileID: 1477288771}
   - component: {fileID: 1477288770}
-  - component: {fileID: 1477288769}
   - component: {fileID: 1477288772}
   m_Layer: 5
   m_Name: Lives
@@ -2427,23 +2421,6 @@ RectTransform:
   m_AnchoredPosition: {x: 296, y: -157}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1477288769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477288767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 997c80624786fd2439d8cd522c27a39f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pLive: {fileID: 0}
-  vidasOn: {fileID: 0}
-  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
-  SpriteRenderer: {fileID: 0}
-  vidaAtual: {fileID: 0}
 --- !u!114 &1477288770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,7 +2924,6 @@ GameObject:
   - component: {fileID: 1732904396}
   - component: {fileID: 1732904399}
   - component: {fileID: 1732904398}
-  - component: {fileID: 1732904397}
   m_Layer: 5
   m_Name: Lives (1)
   m_TagString: Untagged
@@ -2974,23 +2950,6 @@ RectTransform:
   m_AnchoredPosition: {x: 336.00003, y: -157}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1732904397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732904395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ecacf37a09c21847bf97ecb11713783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pLive: {fileID: 0}
-  vidasOn: {fileID: 0}
-  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
-  SpriteRenderer: {fileID: 0}
-  vidaAtual: {fileID: 0}
 --- !u!114 &1732904398
 MonoBehaviour:
   m_ObjectHideFlags: 0
