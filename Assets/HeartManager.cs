@@ -16,10 +16,22 @@ public class HeartManager : MonoBehaviour
             for(int i = 0; i <  heartContainers.initialValue; i++){
                 hearts[i].gameObject.SetActive(true);
                 hearts[i].sprite = vidasOn;
-
-
             }
 
+        }
+
+        void Update(){
+             float tempHealth = playerCurrentHealth.RuntimeValue;
+             
+            for (int i = 0; i<heartContainers.RuntimeValue; i++){
+                if(i<=tempHealth){
+                    hearts[i].sprite = vidasOn;
+
+                }
+                else{
+                    hearts[i].sprite = vidasOff;                    
+                }
+            }
         }
         public void UpdateHearts(){
             float tempHealth = playerCurrentHealth.RuntimeValue;

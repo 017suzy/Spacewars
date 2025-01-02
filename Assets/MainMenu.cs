@@ -3,7 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public FloatValue currentHealth;
+    
+
     public void PlayGame(){
+        currentHealth.RuntimeValue = currentHealth.initialValue;
         SceneManager.LoadScene("Cutscene");
     }
     public void Credits(){
@@ -18,6 +22,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Restart(){
+        currentHealth.RuntimeValue = currentHealth.initialValue;
         Destroy (GameObject.Find("Canvas"));        
         SceneManager.LoadScene("SampleScene");
     }
