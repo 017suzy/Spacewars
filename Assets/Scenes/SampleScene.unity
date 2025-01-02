@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &201416232
 RectTransform:
   m_ObjectHideFlags: 0
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af97648bc28a7c94b8fd894c49226541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pLive: {fileID: 504210000}
+  pLive: {fileID: 0}
   vidasOn: {fileID: 0}
   vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
   SpriteRenderer: {fileID: 0}
@@ -987,14 +987,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 504209993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d32d3cee1d6cb4fac607169781a898, type: 3}
+  m_Script: {fileID: 11500000, guid: 31e76fea18dd41543ac6337dcdb9a3d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
-  livesUI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  signal: {fileID: 11400000, guid: a9d9b94f62e9353468f14a256df0441e, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &504210001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,10 +1015,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 504209993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3125b3fb775b42448b08426eba3ed35f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d32d3cee1d6cb4fac607169781a898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectIndex: 2
+  lives: 3
+  livesUI: []
+  currentHealth: {fileID: 11400000, guid: 161f34ccc7c106d4a99ca3d13c5969ad, type: 2}
+  playerHealthSignal: {fileID: 11400000, guid: a9d9b94f62e9353468f14a256df0441e, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1313,8 @@ GameObject:
   - component: {fileID: 638166176}
   - component: {fileID: 638166180}
   - component: {fileID: 638166181}
+  - component: {fileID: 638166183}
+  - component: {fileID: 638166182}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1423,6 +1439,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectIndex: 1
+--- !u!114 &638166182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638166175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f37e64c673b174c96095d775c29eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 1477288770}
+  - {fileID: 1732904398}
+  - {fileID: 201416234}
+  vidasOn: {fileID: -7034984210369593018, guid: 5dc151bb923ae2644b90030f2bfad7d4, type: 3}
+  vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
+  heartContainers: {fileID: 11400000, guid: e4920d9768148554291b15df6d7e27cc, type: 2}
+--- !u!114 &638166183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638166175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e76fea18dd41543ac6337dcdb9a3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: a9d9b94f62e9353468f14a256df0441e, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,13 +2400,14 @@ GameObject:
   - component: {fileID: 1477288771}
   - component: {fileID: 1477288770}
   - component: {fileID: 1477288769}
+  - component: {fileID: 1477288772}
   m_Layer: 5
   m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1477288768
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2387,7 +2439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997c80624786fd2439d8cd522c27a39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pLive: {fileID: 504210000}
+  pLive: {fileID: 0}
   vidasOn: {fileID: 0}
   vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
   SpriteRenderer: {fileID: 0}
@@ -2430,6 +2482,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477288767}
   m_CullTransparentMesh: 1
+--- !u!114 &1477288772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477288767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 4
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1482680087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,7 +2954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1732904396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2908,7 +2986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ecacf37a09c21847bf97ecb11713783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pLive: {fileID: 504210000}
+  pLive: {fileID: 0}
   vidasOn: {fileID: 0}
   vidasOff: {fileID: -5004139027091914304, guid: 53581bc767f14094694d6197a8759a85, type: 3}
   SpriteRenderer: {fileID: 0}
