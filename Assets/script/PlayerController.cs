@@ -4,11 +4,11 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private Vector2 entradasJogador;
-    private int InputXHash = Animator.StringToHash("Xinput");
-    private int InputYHash = Animator.StringToHash("Yinput");
+    private int InputXHash = Animator.StringToHash("XInput");
+    private int InputYHash = Animator.StringToHash("YInput");
 
     private Rigidbody2D rb;
-    private float velocidade = 2.0f;
+    private float velocidade = 4.5f;
 
     private void Awake()
     {

@@ -7,14 +7,14 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyType3; // Prefab do inimigo tipo 3
 
     public float spawnInterval = 2f; // Intervalo entre os spawns
-    public int maxEnemies = 12; // Limite de inimigos na cena
+    public int maxEnemies = 14; // Limite de inimigos na cena
 
     private int currentEnemyCount = 0; // Contador de inimigos ativos
 
     private void Start()
     {
         // Inicia o spawn em loop
-        InvokeRepeating(nameof(SpawnEnemy), 0f, spawnInterval);
+        InvokeRepeating(nameof(SpawnEnemy), 2f, spawnInterval);
     }
 
     private void SpawnEnemy()

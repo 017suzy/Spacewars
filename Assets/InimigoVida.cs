@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InimigoVida : MonoBehaviour
@@ -9,7 +10,6 @@ public class InimigoVida : MonoBehaviour
     public float vidaCheia = 100;
     public GameObject explosionPrefab;
 
-    public GameObject Victorypanel;
     
     void Start()
     {
@@ -42,8 +42,7 @@ public class InimigoVida : MonoBehaviour
             Destroy(gameObject);
             pointManager.UpdateScore(100);
             barraVida.enabled = false;
-            Time.timeScale = 0f;
-            Victorypanel.SetActive(true);
+            SceneManager.LoadScene("victory");
         }
 
     }

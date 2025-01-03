@@ -17,6 +17,7 @@ public class atirar : MonoBehaviour
     {
         transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
     }
+    
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.tag == "Enemy"){
             Destroy(collision.gameObject);

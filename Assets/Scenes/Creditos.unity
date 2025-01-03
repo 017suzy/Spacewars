@@ -455,6 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e027e4ff04fbb42997ead61be722cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: {fileID: 0}
 --- !u!1 &819550284
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,8 +648,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: back to menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 068c0bfed7c53bc4f9076cd36822d3a5, type: 2}
-  m_sharedMaterial: {fileID: 1367839486681909448, guid: 068c0bfed7c53bc4f9076cd36822d3a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6d2871e328e1afc4db27d46aabc34a2f, type: 2}
+  m_sharedMaterial: {fileID: 408847454049690568, guid: 6d2871e328e1afc4db27d46aabc34a2f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -986,8 +987,8 @@ MonoBehaviour:
     Silva da Torre\r\n\r\nSOM:\r\nApolo dos Santos Moreira\r\n\r\nDOCUMENTA\xC7\xC3O:
     \r\nIgor de Camargo Godoy"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 068c0bfed7c53bc4f9076cd36822d3a5, type: 2}
-  m_sharedMaterial: {fileID: 1367839486681909448, guid: 068c0bfed7c53bc4f9076cd36822d3a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6d2871e328e1afc4db27d46aabc34a2f, type: 2}
+  m_sharedMaterial: {fileID: 408847454049690568, guid: 6d2871e328e1afc4db27d46aabc34a2f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

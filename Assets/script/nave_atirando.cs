@@ -4,6 +4,7 @@ public class nave_atirando : MonoBehaviour
 {
     public bool AllowedToShoot = true;
     public GameObject projectilePrefab;
+    public float cronometer = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +15,13 @@ public class nave_atirando : MonoBehaviour
     void Update()
     {
         if (AllowedToShoot == false) return;
-        if (Input.GetButtonDown("Fire1")){
-            Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        
+        cronometer -= Time.deltaTime;
+        if(cronometer<=0){
+            if (Input.GetButtonDown("Fire1")){
+                Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                cronometer = 1f;
+            }
         }
         
     }

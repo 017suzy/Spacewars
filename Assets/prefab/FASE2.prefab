@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8756036194422088793}
   - component: {fileID: 5371985360374101305}
   - component: {fileID: -5199490432404755942}
+  - component: {fileID: 1672343163137789751}
   m_Layer: 0
   m_Name: FASE2
   m_TagString: Enemy
@@ -102,10 +103,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc2bbab0bf3e06940ba0d232ecda4f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descentSpeed: 3
-  rotationSpeed: 50
-  centerPosition: {x: -0.64, y: -0.79}
-  radius: 2
+  explosionPrefab: {fileID: 0}
+  speed: 5
+  timer: 0
+  direita: 1
+  esquerda: 0
+  cima: 0
+  baixo: 0
 --- !u!61 &5371985360374101305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,3 +183,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1672343163137789751
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927678936838830670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd9ca7b4b325c8646a4df15a84864bfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
