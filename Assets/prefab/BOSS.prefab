@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 3972386628874429325, guid: af48a7e1083a5af46b639216282d98bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -222,7 +222,6 @@ MonoBehaviour:
   vida: 5
   vidaCheia: 1
   explosionPrefab: {fileID: 0}
-  Victorypanel: {fileID: 0}
 --- !u!95 &2249104296156605782
 Animator:
   serializedVersion: 7
