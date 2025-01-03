@@ -5,8 +5,8 @@ using System.Collections;
 public class scroll : MonoBehaviour
 {
     float scrollSpeed = 50f;
-    float textbeginning = -281f;
-    float textending = 800f;
+    float textbeginning = -340f;
+    float textending = 900f;
     
     RectTransform rectTransf;
     [SerializeField]

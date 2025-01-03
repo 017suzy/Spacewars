@@ -10,6 +10,8 @@ public class InimigoVida : MonoBehaviour
     public float vidaCheia = 100;
     public GameObject explosionPrefab;
 
+    public GameObject victorypanel;
+
     
     void Start()
     {
@@ -42,7 +44,8 @@ public class InimigoVida : MonoBehaviour
             Destroy(gameObject);
             pointManager.UpdateScore(100);
             barraVida.enabled = false;
-            SceneManager.LoadScene("victory");
+            Time.timeScale = 0f;
+            victorypanel.SetActive(true);
         }
 
     }

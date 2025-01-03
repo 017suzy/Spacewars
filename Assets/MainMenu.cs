@@ -5,6 +5,10 @@ public class MainMenu : MonoBehaviour
 {
     public FloatValue currentHealth;
     
+    void Awake()
+    {
+        Time.timeScale = 1f;
+    }
 
     public void PlayGame(){
         currentHealth.RuntimeValue = currentHealth.initialValue;
@@ -20,7 +24,7 @@ public class MainMenu : MonoBehaviour
 
     public void BackToMenu(){
         Destroy (GameObject.Find("ScoreKeeper")); 
-        Destroy (GameObject.Find("HealthCanvas"));       
+        Destroy (GameObject.Find("HealthCanvas"));      
         SceneManager.LoadScene("MainMenu");
 
     }

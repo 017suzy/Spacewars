@@ -666,7 +666,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -61.23095, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &471184404
@@ -1174,6 +1174,7 @@ MonoBehaviour:
   isPaused: 0
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 504209999}
+  playerzero: {fileID: 0}
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.4}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3430,6 +3431,10 @@ PrefabInstance:
     - target: {fileID: 438352626714890891, guid: b919e2b3de27e08478eb343c71aff38a, type: 3}
       propertyPath: m_Name
       value: nave_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422366488708871688, guid: b919e2b3de27e08478eb343c71aff38a, type: 3}
+      propertyPath: timeCube
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8143105337354733392, guid: b919e2b3de27e08478eb343c71aff38a, type: 3}
       propertyPath: m_LocalPosition.x

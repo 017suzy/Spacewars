@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class pausemenu : MonoBehaviour
     public bool isPaused = false;
     public GameObject pausePanel;
     public nave_atirando ShooterAgent;
+    public GameObject playerzero;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +31,7 @@ public class pausemenu : MonoBehaviour
     }
 
     public void PausedGame(){
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
         isPaused = true;
         pausePanel.SetActive(true);
         ShooterAgent.AllowedToShoot = false;

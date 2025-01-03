@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 entradasJogador;
     private int InputXHash = Animator.StringToHash("XInput");
     private int InputYHash = Animator.StringToHash("YInput");
-
+    //public Transform unscaledTimeCube;
     private Rigidbody2D rb;
     private float velocidade = 4.5f;
 
@@ -23,7 +23,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (rb != null)
+        //unscaledTimeCube.Translate(Vector3.forward * Time.unscaledDeltaTime); //will always move //Will freeze if timescale is 0
+
+        if (rb != null && Time.timeScale != 0)
         {
             entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal"), 0); 
             animator.SetFloat(InputXHash, entradasJogador.x);
