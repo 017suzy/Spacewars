@@ -1,34 +1,33 @@
-using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //variáveis públicas podem ser modificadas nos testes!!!
-    public float moveSpeed = 5;
-    public float HorInput;
-    public Animator animator;
-    //public CharacterController controller;
+    private Animator animator;
+    private Vector2 entradasJogador;
+    private int InputXHash = Animator.StringToHash("Xinput");
+    private int InputYHash = Animator.StringToHash("Yinput");
 
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Rigidbody2D rb;
+    private float velocidade = 2.0f;
+
+    private void Awake()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+
+        if (rb == null)
+        {
+            Debug.LogError("Rigidbody2D component is missing on " + gameObject.name);
+        }
     }
 
-    // Em update, cada frame será utilizado 60x por segundo!
     void Update()
-    // Queremos uma movimentação horizontal (dir. e esq.) = variar x!
     {
-        HorInput = Input.GetAxisRaw("Horizontal"); //Vem de Assets, onde há todas as informações do player
-        //estamos chamando esse asset para controlarmos o movimento do player
-
-        transform.Translate(Vector2.right * HorInput * moveSpeed * Time.deltaTime); //Translate = escorregar, Vector2 = coordenadas x e y | outra forma de escrever = Vector2(1.0)
-        // time.deltatime = uma forma matematica de contar o tempo
-
-        transform.Translate(Vector2.left * HorInput * moveSpeed * Time.deltaTime);
-
-        animator.SetFloat("speed", HorInput);
+        if (rb != null)
+        {
+            entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal"), 0); 
+            animator.SetFloat(InputXHash, entradasJogador.x);
+            transform.position += new Vector3(entradasJogador.x * velocidade * Time.deltaTime, 0, 0);
+        }
     }
-
 }
