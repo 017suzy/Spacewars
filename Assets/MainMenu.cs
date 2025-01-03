@@ -8,22 +8,25 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame(){
         currentHealth.RuntimeValue = currentHealth.initialValue;
+        Destroy (GameObject.Find("ScoreKeeper")); 
+        Destroy (GameObject.Find("HealthCanvas"));  
         SceneManager.LoadScene("Cutscene");
     }
     public void Credits(){
-        Destroy (GameObject.Find("Canvas"));        
+        Destroy (GameObject.Find("ScoreKeeper")); 
+        Destroy (GameObject.Find("HealthCanvas"));         
         SceneManager.LoadScene("Creditos");
     }
 
     public void BackToMenu(){
-        Destroy (GameObject.Find("Canvas"));        
+        Destroy (GameObject.Find("ScoreKeeper")); 
+        Destroy (GameObject.Find("HealthCanvas"));       
         SceneManager.LoadScene("MainMenu");
 
     }
 
     public void Restart(){
-        currentHealth.RuntimeValue = currentHealth.initialValue;
-        Destroy (GameObject.Find("Canvas"));        
+        currentHealth.RuntimeValue = currentHealth.initialValue;       
         SceneManager.LoadScene("SampleScene");
     }
 

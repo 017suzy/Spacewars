@@ -8,7 +8,9 @@ public class InimigoVida : MonoBehaviour
     public float vida;
     public float vidaCheia = 100;
     public GameObject explosionPrefab;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public GameObject Victorypanel;
+    
     void Start()
     {
         vidaCheia = vida;  
@@ -40,6 +42,8 @@ public class InimigoVida : MonoBehaviour
             Destroy(gameObject);
             pointManager.UpdateScore(100);
             barraVida.enabled = false;
+            Time.timeScale = 0f;
+            Victorypanel.SetActive(true);
         }
 
     }
