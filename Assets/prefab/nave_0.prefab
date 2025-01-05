@@ -33,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 438352626714890891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.257, y: -2.776, z: 0}
-  m_LocalScale: {x: 1.6875225, y: 1.5864408, z: 1}
+  m_LocalPosition: {x: 0.257, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3706526112541253454}
@@ -200,6 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowedToShoot: 1
   projectilePrefab: {fileID: 7314217131294660141, guid: bec07a3c72f605b4d828b61a5f5deec7, type: 3}
+  cronometer: 1
 --- !u!114 &9032629847704322753
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class Inimigo2Movimento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate( Vector2.down * moveSpeed * Time.deltaTime);
+        transform.Translate( Vector2.down * 2 * moveSpeed * Time.deltaTime);
         cronometer -= Time.deltaTime;                
     }
 

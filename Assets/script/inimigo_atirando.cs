@@ -8,7 +8,7 @@ public class inimigo_atirando : MonoBehaviour
     {
         
     }
-    public float cronometer = 5;
+    public float cronometer = 3;
     public GameObject projectilePrefab;
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class inimigo_atirando : MonoBehaviour
         cronometer -= Time.deltaTime;
         if(cronometer<=0){
             Instantiate(projectilePrefab, transform.position, Quaternion.identity);  
-            cronometer = 5;                      
+            cronometer = 3;                      
         }
     }
 }

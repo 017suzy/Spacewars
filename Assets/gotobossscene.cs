@@ -19,7 +19,7 @@ public class gotobossscene : MonoBehaviour
 
     IEnumerator NextScene() 
     {
-        yield return new WaitForSeconds(45f);
+        yield return new WaitForSeconds(20f);
         SceneManager.LoadScene("BOSSFIGHT");
     }
 }
