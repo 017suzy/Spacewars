@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    public AudioSource bossMusic; // O AudioSource para a música do boss
-    public AudioSource victoryMusic; // O AudioSource para a música de vitória
+    public AudioSource bossMusic; // Referência ao AudioSource da música do boss
 
-    // Chame esta função ao ativar o Canvas de vitória
-    public void PlayVictoryMusic()
+    // Método para parar a música do boss
+    public void StopBossMusic()
     {
-        if (bossMusic.isPlaying)
+        if (bossMusic != null && bossMusic.isPlaying)
         {
-            bossMusic.Stop(); // Para a música do boss
+            bossMusic.Stop();
         }
+    }
 
-        if (!victoryMusic.isPlaying)
-        {
-            victoryMusic.Play(); // Toca a música de vitória
-        }
+    // Método para tocar a música de vitória
+    public void PlayVictoryMusic(AudioSource victoryMusic)
+    {
+        StopBossMusic(); // Certifique-se de que a música do boss foi parada
+        victoryMusic.Play(); // Toca a música de vitória
     }
 }

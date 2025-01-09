@@ -13,6 +13,8 @@ public class PlayerLifes : MonoBehaviour
     public Image[] livesUI;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;   
+    public AudioSource audioSource; // Fonte de áudio
+    public AudioClip damageSound; // Som de dano
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake(){
         
@@ -39,6 +41,10 @@ public class PlayerLifes : MonoBehaviour
             
             currentHealth.RuntimeValue--;
             playerHealthSignal.Raise();
+            if (audioSource != null && damageSound != null)
+            {
+                audioSource.PlayOneShot(damageSound);
+            }
             Destroy(collision.gameObject);          
             if(currentHealth.RuntimeValue < 0){
                 Debug.Log("You're Dead");                
