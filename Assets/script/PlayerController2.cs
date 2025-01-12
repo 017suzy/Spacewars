@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController2 : MonoBehaviour
 {
     private Animator animator;
     private Vector2 entradasJogador;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         if (rb != null && Time.timeScale != 0)
         {
-            entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal"), 0);  // Player 1 usa "Horizontal" no Input
+            entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal2"), 0);  // Player 2 usa "Horizontal2" no Input
             animator.SetFloat(InputXHash, entradasJogador.x);
             transform.position += new Vector3(entradasJogador.x * velocidade * Time.deltaTime, 0, 0);
         }
