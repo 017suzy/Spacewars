@@ -30,6 +30,7 @@ public class PlayerLifes1 : MonoBehaviour
             {
                 Debug.Log("You're Dead");
                 Destroy(gameObject);
+                SceneManager.LoadScene("gameover2");
             }
         }
     }

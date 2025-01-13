@@ -899,7 +899,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9170183864247057606, guid: b919e2b3de27e08478eb343c71aff38a, type: 3}
   m_PrefabInstance: {fileID: 5521566143236305256}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818793531}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5028fb0d9d54e54d9feac6d916c3b73, type: 3}
@@ -1440,52 +1440,6 @@ MonoBehaviour:
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 504209999}
   playerzero: {fileID: 0}
---- !u!1 &645124953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 645124955}
-  - component: {fileID: 645124954}
-  m_Layer: 0
-  m_Name: isdead
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &645124954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645124953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13207cbcc8fe1242ac932781999a90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 818793531}
-  player2: {fileID: 113767743}
---- !u!4 &645124955
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645124953}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.086079, y: 1.194058, z: -0.04689035}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,11 +1801,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &818793531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 438352626714890891, guid: b919e2b3de27e08478eb343c71aff38a, type: 3}
-  m_PrefabInstance: {fileID: 5521566143236305256}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &998802892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,8 +2088,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BOSS IS COMING...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 830711e808858eb4f8266ecc8a66cf51, type: 2}
-  m_sharedMaterial: {fileID: -3488664959414516032, guid: 830711e808858eb4f8266ecc8a66cf51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1d69da88ea992f7458c5ef84dc035686, type: 2}
+  m_sharedMaterial: {fileID: 2865180591619978668, guid: 1d69da88ea992f7458c5ef84dc035686, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2254,7 +2203,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 492, y: 258}
+  m_SizeDelta: {x: 380, y: 258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231161876
 MonoBehaviour:
@@ -4400,4 +4349,3 @@ SceneRoots:
   - {fileID: 2012266281}
   - {fileID: 748975207}
   - {fileID: 1434108547}
-  - {fileID: 645124955}
