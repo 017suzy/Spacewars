@@ -26,24 +26,10 @@ public class PlayerLifes : MonoBehaviour
             playerHealthSignal.Raise();
             Destroy(collision.gameObject);
             
-            if (SceneManager.GetSceneByName("singleplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT").isLoaded))
+        if (currentHealth.RuntimeValue < 0)
             {
-                if (currentHealth.RuntimeValue < 0)
-                {
-                    Debug.Log("You're Dead");
-                    Destroy(gameObject);
-                    SceneManager.LoadScene("gameover");
-                }
-            }
-
-            if (SceneManager.GetSceneByName("multiplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT2").isLoaded))
-            {
-                if (currentHealth.RuntimeValue < 0)
-                {
-                    Debug.Log("You're Dead");
-                    Destroy(gameObject);
-                    SceneManager.LoadScene("gameover2");
-                }
+                Debug.Log("You're Dead");
+                Destroy(gameObject);
             }
         }
     }

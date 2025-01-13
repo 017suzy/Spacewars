@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         // Inicia o spawn em loop
-        InvokeRepeating(nameof(SpawnEnemy), 5f, spawnInterval);
+        InvokeRepeating(nameof(SpawnEnemy), 4.2f, spawnInterval);
     }
 
     private void SpawnEnemy()

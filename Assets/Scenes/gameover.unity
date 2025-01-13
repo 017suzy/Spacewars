@@ -1205,6 +1205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: {fileID: 11400000, guid: 161f34ccc7c106d4a99ca3d13c5969ad, type: 2}
+  currentHealth1: {fileID: 11400000, guid: bb90e3207bb3b2b478e6e81b4a202ddf, type: 2}
 --- !u!1 &1772135745
 GameObject:
   m_ObjectHideFlags: 0

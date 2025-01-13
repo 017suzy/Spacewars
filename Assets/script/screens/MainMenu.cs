@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public FloatValue currentHealth;
+    public FloatValue1 currentHealth1;
 
     void Awake()
     {
@@ -38,10 +39,11 @@ public class MainMenu : MonoBehaviour
     public void StartMultiplayer()
     {
         currentHealth.RuntimeValue = currentHealth.initialValue;
+        currentHealth1.RuntimeValue1 = currentHealth1.initialValue1;
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
         Destroy(GameObject.Find("HealthCanvasp2"));
-        SceneManager.LoadScene("Cutscene"); 
+        SceneManager.LoadScene("Cutscene2"); 
 
     }
 
@@ -54,6 +56,7 @@ public class MainMenu : MonoBehaviour
     public void Restartp2()
     {
         currentHealth.RuntimeValue = currentHealth.initialValue;
+        currentHealth1.RuntimeValue1 = currentHealth1.initialValue1;
         SceneManager.LoadScene("multiplayer");
     }
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DonDestroy : MonoBehaviour
 {
-    private static GameObject[] persistentObjects = new GameObject[3]; //delete duplicates
+    private static GameObject[] persistentObjects = new GameObject[4]; //delete duplicates
 
     public int objectIndex;
 
