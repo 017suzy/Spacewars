@@ -22,14 +22,14 @@ public class nave_atirando : MonoBehaviour
         if (cronometer <= 0)
         {
             // Identifica se é a nave_0 ou nave_1 e aplica os controles específicos
-            if (gameObject.name == "nave_0") // Player 1
+            if (gameObject.name == "nave_1") // Player 2
             {
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.LeftControl))
                 {
                     Atirar();
                 }
             }
-            else if (gameObject.name == "nave_1") // Player 2
+            else if (gameObject.name == "nave_0") // Player 1
             {
                 if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
                 {

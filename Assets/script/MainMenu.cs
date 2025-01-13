@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
         currentHealth.RuntimeValue = currentHealth.initialValue;
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
+        Destroy(GameObject.Find("HealthCanvasp2"));
         SceneManager.LoadScene("Cutscene");
     }
 
@@ -22,6 +23,7 @@ public class MainMenu : MonoBehaviour
     {
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
+        Destroy(GameObject.Find("HealthCanvasp2"));
         SceneManager.LoadScene("Creditos");
     }
 
@@ -29,6 +31,7 @@ public class MainMenu : MonoBehaviour
     {
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
+        Destroy(GameObject.Find("HealthCanvasp2"));
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -37,14 +40,21 @@ public class MainMenu : MonoBehaviour
         currentHealth.RuntimeValue = currentHealth.initialValue;
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
-        SceneManager.LoadScene("Samplescene_Multiplayer"); 
+        Destroy(GameObject.Find("HealthCanvasp2"));
+        SceneManager.LoadScene("Cutscene"); 
 
     }
 
     public void Restart()
     {
         currentHealth.RuntimeValue = currentHealth.initialValue;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("singleplayer");
+    }
+
+    public void Restartp2()
+    {
+        currentHealth.RuntimeValue = currentHealth.initialValue;
+        SceneManager.LoadScene("multiplayer");
     }
 
     public void QuitGame()

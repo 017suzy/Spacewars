@@ -19,7 +19,15 @@ public class gotonextscene : MonoBehaviour
 
     IEnumerator NextScene() 
     {
-        yield return new WaitForSeconds(5.1f);
-        SceneManager.LoadScene("SampleScene");
+        if (SceneManager.GetSceneByName("Cutscene").isLoaded)
+        {
+            yield return new WaitForSeconds(10f);
+            SceneManager.LoadScene("singleplayer");
+        }
+        else if (SceneManager.GetSceneByName("Cutscene2").isLoaded)
+        {
+            yield return new WaitForSeconds(10f);
+            SceneManager.LoadScene("multiplayer");
+        }
     }
 }

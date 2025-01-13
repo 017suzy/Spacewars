@@ -19,7 +19,16 @@ public class gotobossscene : MonoBehaviour
 
     IEnumerator NextScene() 
     {
-        yield return new WaitForSeconds(40f);
-        SceneManager.LoadScene("BOSSFIGHT");
+        if (SceneManager.GetSceneByName("singleplayer").isLoaded)
+        {
+            yield return new WaitForSeconds(45f);
+            SceneManager.LoadScene("BOSSFIGHT");
+        }
+        else if (SceneManager.GetSceneByName("multiplayer").isLoaded)
+        {
+            yield return new WaitForSeconds(45f);
+            SceneManager.LoadScene("BOSSFIGHT2");
+        }
+
     }
 }

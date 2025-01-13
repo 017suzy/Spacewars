@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         if (rb != null && Time.timeScale != 0)
         {
-            entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal"), 0);  // Player 1 usa "Horizontal" no Input
+            entradasJogador = new Vector2(Input.GetAxisRaw("Horizontal2"), 0);  // Player 1 usa "Horizontal" no Input
             animator.SetFloat(InputXHash, entradasJogador.x);
             transform.position += new Vector3(entradasJogador.x * velocidade * Time.deltaTime, 0, 0);
         }
