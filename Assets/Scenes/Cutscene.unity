@@ -394,6 +394,8 @@ PlayableDirector:
     value: {fileID: 1211656658}
   - key: {fileID: -1344797171849592441, guid: b79cf29b653eb3141808fb85dc3874c9, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 7812866674449219770, guid: b79cf29b653eb3141808fb85dc3874c9, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &217142652
@@ -1787,7 +1789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.679993, y: -69.630005}
+  m_AnchoredPosition: {x: 14.679932, y: -69.630005}
   m_SizeDelta: {x: -562.14, y: -899.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1957841958

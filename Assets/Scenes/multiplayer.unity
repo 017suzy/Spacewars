@@ -1374,6 +1374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossMusic: {fileID: 0}
+  playMusic: {fileID: 567903674}
 --- !u!4 &567903676
 Transform:
   m_ObjectHideFlags: 0

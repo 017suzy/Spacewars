@@ -1962,6 +1962,7 @@ MonoBehaviour:
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 499034054}
   playerzero: {fileID: 0}
+  resumeAudio: {fileID: 0}
 --- !u!114 &638166181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,8 +1975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba8044b653eeff44aeb9a741b4828d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VictoryPanel: {fileID: 1982063277}
   audioController: {fileID: 0}
+  victoryMusic: {fileID: 0}
+  VictoryPanel: {fileID: 1982063277}
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,7 +3872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossMusic: {fileID: 1534271047}
-  victoryMusic: {fileID: 1982063281}
 --- !u!1 &1544964346
 GameObject:
   m_ObjectHideFlags: 0
@@ -5269,7 +5270,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 45438916f75a5c34f962b7dad92a7048, type: 3}
   m_Resource: {fileID: 8300000, guid: 45438916f75a5c34f962b7dad92a7048, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.14
   m_Pitch: 1
   Loop: 0
   Mute: 0

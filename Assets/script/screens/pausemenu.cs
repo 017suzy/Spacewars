@@ -33,6 +33,15 @@ public class pausemenu : MonoBehaviour
 
     public void PausedGame(){
         Time.timeScale = 0;
+
+        AudioController[] audios = FindObjectsOfType<AudioController>();
+        foreach (AudioController a in audios)
+        {
+            a.StopBossMusic();
+            a.StopPlayMusic();
+        }
+
+
         isPaused = true;
         pausePanel.SetActive(true);
         ShooterAgent.AllowedToShoot = false;
@@ -40,6 +49,13 @@ public class pausemenu : MonoBehaviour
 
     public void ResumeGame() {
         Time.timeScale = 1f;
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource a in audios)
+        {
+            a.Play();
+        }
+
         isPaused = false;
         pausePanel.SetActive(false);
         ShooterAgent.AllowedToShoot = true;

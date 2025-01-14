@@ -3,6 +3,7 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public AudioSource bossMusic; // Referência ao AudioSource da música do boss
+    public AudioSource playMusic;
 
     // Método para parar a música do boss
     public void StopBossMusic()
@@ -18,5 +19,13 @@ public class AudioController : MonoBehaviour
     {
         StopBossMusic(); // Certifique-se de que a música do boss foi parada
         victoryMusic.Play(); // Toca a música de vitória
+    }
+
+    public void StopPlayMusic()
+    {
+        if (playMusic != null && playMusic.isPlaying)
+        {
+            playMusic.Stop();
+        }
     }
 }
