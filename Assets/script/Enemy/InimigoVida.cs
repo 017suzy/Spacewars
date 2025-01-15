@@ -13,7 +13,7 @@ public class InimigoVida : MonoBehaviour
     [SerializeField] private AudioClip damageaudioClip;
     private AudioSource audioSource;
 
-    public AudioController a;
+    public AudioController vitoria;
 
     
     void Start()
@@ -52,7 +52,7 @@ public class InimigoVida : MonoBehaviour
             pointManager.UpdateScore(100);
             barraVida.enabled = false;
             Time.timeScale = 0f;
-            a.StopBossMusic();
+            vitoria.StopBossMusic();
             victorypanel.SetActive(true);
         }
 

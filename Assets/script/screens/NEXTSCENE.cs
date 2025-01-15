@@ -21,12 +21,12 @@ public class gotonextscene : MonoBehaviour
     {
         if (SceneManager.GetSceneByName("Cutscene").isLoaded)
         {
-            yield return new WaitForSeconds(7f);
+            yield return new WaitForSeconds(6f);
             SceneManager.LoadScene("singleplayer");
         }
         else if (SceneManager.GetSceneByName("Cutscene2").isLoaded)
         {
-            yield return new WaitForSeconds(7f);
+            yield return new WaitForSeconds(6f);
             SceneManager.LoadScene("multiplayer");
         }
     }

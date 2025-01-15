@@ -1594,9 +1594,6 @@ MonoBehaviour:
   isPaused: 0
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 499034054}
-  playerzero: {fileID: 0}
-  resumeAudio: {fileID: 1047456457}
-  a: {fileID: 1047456456}
 --- !u!114 &638166181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2422,10 @@ PrefabInstance:
       propertyPath: vida
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
+      propertyPath: vitoria
+      value: 
+      objectReference: {fileID: 1047456456}
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: Loselifes
       value: 
