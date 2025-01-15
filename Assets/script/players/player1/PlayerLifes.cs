@@ -9,6 +9,14 @@ public class PlayerLifes : MonoBehaviour
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
 
+    [SerializeField] private AudioClip damageaudioClip;
+    private AudioSource audioSource;
+
+
+    void Start(){
+        audioSource = GetComponent<AudioSource>(); 
+    }
+
     void Update()
     {
         // Atualize a UI das vidas, se necessário
@@ -25,6 +33,8 @@ public class PlayerLifes : MonoBehaviour
             currentHealth.RuntimeValue--;
             playerHealthSignal.Raise();
             Destroy(collision.gameObject);
+            audioSource.clip = damageaudioClip;
+            audioSource.Play();
             
             if (SceneManager.GetSceneByName("singleplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT").isLoaded))
             {

@@ -8,7 +8,13 @@ public class PlayerLifes1 : MonoBehaviour
     public Image[] livesUI;
     public FloatValue1 currentHealth2;
     public Signal1 playerHealthSignal2;
+    [SerializeField] private AudioClip damageaudioClip;
+    private AudioSource audioSource;
 
+    void Start(){
+        audioSource = GetComponent<AudioSource>(); 
+    }
+    
     void Update()
     {
         // Atualize a UI das vidas, se necessário
@@ -22,6 +28,8 @@ public class PlayerLifes1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "balaInimigo")
         {
+            audioSource.clip = damageaudioClip;
+            audioSource.Play();
             currentHealth2.RuntimeValue1--;
             playerHealthSignal2.Raise();
             Destroy(collision.gameObject);

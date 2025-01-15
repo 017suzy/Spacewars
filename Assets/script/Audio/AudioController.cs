@@ -6,6 +6,7 @@ public class AudioController : MonoBehaviour
     public AudioSource playMusic;
 
     // Método para parar a música do boss
+
     public void StopBossMusic()
     {
         if (bossMusic != null && bossMusic.isPlaying)
@@ -19,6 +20,16 @@ public class AudioController : MonoBehaviour
     {
         StopBossMusic(); // Certifique-se de que a música do boss foi parada
         victoryMusic.Play(); // Toca a música de vitória
+    }
+
+    public void PlayBossMusic()
+    {
+        bossMusic.Play();
+    }
+
+    public void PlayMusic()
+    {
+        playMusic.Play();
     }
 
     public void StopPlayMusic()

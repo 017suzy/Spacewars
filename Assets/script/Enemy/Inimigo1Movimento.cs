@@ -37,8 +37,7 @@ public class inimigo2Movimento : MonoBehaviour
         if (other.gameObject.tag =="barreira")
         {
             dirX *= -1f;  
-        }       
-                
+        }
     
     }
 

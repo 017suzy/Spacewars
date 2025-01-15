@@ -21,7 +21,9 @@ public class MainMenu : MonoBehaviour
     }
 
     public void PlayGame()
-    {   PlayButtonSound();
+    {   
+        Destroy(GameObject.Find("AudioController"));
+        PlayButtonSound();
         currentHealth.RuntimeValue = currentHealth.initialValue;
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
@@ -38,7 +40,8 @@ public class MainMenu : MonoBehaviour
     }
 
     public void BackToMenu()
-    {   PlayButtonSound();
+    {   
+        PlayButtonSound();
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
         Destroy(GameObject.Find("HealthCanvasp2"));
@@ -46,7 +49,9 @@ public class MainMenu : MonoBehaviour
     }
 
     public void StartMultiplayer()
-    {   PlayButtonSound();
+    {   
+        Destroy(GameObject.Find("AudioController"));
+        PlayButtonSound();
         currentHealth.RuntimeValue = currentHealth.initialValue;
         currentHealth1.RuntimeValue1 = currentHealth1.initialValue1;
         Destroy(GameObject.Find("ScoreKeeper"));
@@ -57,20 +62,24 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Restart()
-    {   PlayButtonSound();
+    {   
+        PlayButtonSound();
         currentHealth.RuntimeValue = currentHealth.initialValue;
         SceneManager.LoadScene("singleplayer");
     }
 
     public void Restartp2()
-    {   PlayButtonSound();
+    {   
+        PlayButtonSound();
         currentHealth.RuntimeValue = currentHealth.initialValue;
         currentHealth1.RuntimeValue1 = currentHealth1.initialValue1;
         SceneManager.LoadScene("multiplayer");
     }
 
     public void QuitGame()
-    {   PlayButtonSound();
+    {   
+        Destroy(GameObject.Find("AudioController"));
+        PlayButtonSound();
         Debug.Log("Quitting Game...");
         Application.Quit();
     }

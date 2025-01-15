@@ -49,16 +49,13 @@ public class Inimigo3mov : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player"){
-            Instantiate(explosionPrefab,transform.position,Quaternion.identity);
-            Destroy(gameObject);
-        }
+        if(other.gameObject.tag == "balaPlayer")
+        {
         
-        if(other.gameObject.tag == "balaPlayer"){            
             Instantiate(explosionPrefab,transform.position,Quaternion.identity);
             Destroy(gameObject);
-
         }
-    
+
     }
+    
 }
