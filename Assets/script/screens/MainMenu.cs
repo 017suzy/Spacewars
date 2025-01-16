@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
     public FloatValue1 currentHealth1;
     public AudioSource audioSource;
     public AudioClip buttonClickSound;
+    private bool isSceneLoading = false;
 
     void Awake()
     {
@@ -32,12 +33,17 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Credits()
-    {   PlayButtonSound();
+    {  
+        isSceneLoading = true;
+        PlayButtonSound();
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
         Destroy(GameObject.Find("HealthCanvasp2"));
+        if (!isSceneLoading)
+        {
         SceneManager.LoadScene("Creditos");
-    }
+        }
+        }
 
     public void BackToMenu()
     {   
