@@ -13,7 +13,7 @@ public class InimigoVida : MonoBehaviour
     [SerializeField] private AudioClip damageaudioClip;
     private AudioSource audioSource;
 
-    //public AudioController vitoria;
+    public AudioController vitoria;
 
     
     void Start()
@@ -37,7 +37,7 @@ public class InimigoVida : MonoBehaviour
     /// collider (2D physics only).
     /// </summary>
     /// <param name="other">The Collision2D data associated with this collision.</param>
-    [System.Obsolete]
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "balaPlayer"){
@@ -53,11 +53,7 @@ public class InimigoVida : MonoBehaviour
             barraVida.enabled = false;
             Time.timeScale = 0;
             
-            AudioController[] audios = FindObjectsOfType<AudioController>();
-            foreach (AudioController vitoria in audios)
-            {
-                vitoria.StopBossMusic();
-            }
+            vitoria.StopPlayMusic();
 
             victorypanel.SetActive(true);
         }

@@ -1974,6 +1974,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 499034054}
   resumeAudio: {fileID: 1534271047}
+  Audio: {fileID: 1534271049}
+  gameplay: {fileID: 8300000, guid: 2cf0cd2da9315a34182cb885205c4094, type: 3}
 --- !u!114 &638166181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4225,8 +4227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85df493b18af35f4a95486311480e0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossMusic: {fileID: 1534271047}
-  playMusic: {fileID: 0}
+  playMusic: {fileID: 1534271047}
+  music: {fileID: 8300000, guid: 2cf0cd2da9315a34182cb885205c4094, type: 3}
 --- !u!1 &1544964346
 GameObject:
   m_ObjectHideFlags: 0
@@ -6529,7 +6531,7 @@ PrefabInstance:
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: vitoria
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1534271049}
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: barraVida
       value: 

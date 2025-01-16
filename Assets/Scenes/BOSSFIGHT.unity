@@ -1607,6 +1607,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 499034054}
   resumeAudio: {fileID: 1047456457}
+  Audio: {fileID: 1047456459}
+  gameplay: {fileID: 8300000, guid: 3fc4fd88519205a47b6e0ac4929ecd3b, type: 3}
 --- !u!114 &638166181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,8 +2628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85df493b18af35f4a95486311480e0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossMusic: {fileID: 1047456457}
-  playMusic: {fileID: 0}
+  playMusic: {fileID: 1047456457}
+  music: {fileID: 8300000, guid: 3fc4fd88519205a47b6e0ac4929ecd3b, type: 3}
 --- !u!1001 &1089467082
 PrefabInstance:
   m_ObjectHideFlags: 0

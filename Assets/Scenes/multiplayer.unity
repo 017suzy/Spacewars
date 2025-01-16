@@ -1388,8 +1388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85df493b18af35f4a95486311480e0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossMusic: {fileID: 0}
   playMusic: {fileID: 567903674}
+  music: {fileID: 8300000, guid: 2cf0cd2da9315a34182cb885205c4094, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1596,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1231161874}
   ShooterAgent: {fileID: 504209999}
   resumeAudio: {fileID: 567903674}
+  Audio: {fileID: 567903677}
+  gameplay: {fileID: 8300000, guid: 2cf0cd2da9315a34182cb885205c4094, type: 3}
 --- !u!1 &677946009
 GameObject:
   m_ObjectHideFlags: 0
