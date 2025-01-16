@@ -25,7 +25,7 @@ public class MudancaCenas : MonoBehaviour
         if (_audioSource != null && _audioSource.clip != null)
         {
             _audioSource.Play();
-            yield return new WaitForSeconds(_audioSource.clip.length); // Aguarda o som terminar
+            yield return new WaitForSeconds(_audioSource.clip.length * 0.1f); // Aguarda o som terminar
         }
 
         // Após o som, inicia o carregamento da cena
@@ -38,7 +38,7 @@ public class MudancaCenas : MonoBehaviour
 
         while (!operation.isDone)
         {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f); // Normaliza o progresso entre 0 e 1
+            float progress = Mathf.Clamp01(operation.progress / 1f); // Normaliza o progresso entre 0 e 1
             yield return null;
         }
 

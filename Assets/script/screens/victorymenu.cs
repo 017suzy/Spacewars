@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class victorymenu : MonoBehaviour
 {
 
-    /*public AudioController audioController; // Referência ao AudioController
+    public AudioController audioController; // Referência ao AudioController
     public AudioSource victoryMusic; // Música de vitória
 
     public void OnVictory()
@@ -18,7 +18,7 @@ public class victorymenu : MonoBehaviour
         {
             Debug.LogWarning("AudioController ou VictoryMusic não foi atribuído no Inspector!");
         }
-    }*/
+    }
 
     public GameObject VictoryPanel;
 

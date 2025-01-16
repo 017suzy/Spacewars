@@ -28,12 +28,43 @@ public class PlayerLifes : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "balaInimigo")
+        if (collision.gameObject.tag == "Enemy")
         {
             currentHealth.RuntimeValue--;
             playerHealthSignal.Raise();
             Destroy(collision.gameObject);
-            audioSource.clip = damageaudioClip;
+            audioSource.Play();
+            
+            if (SceneManager.GetSceneByName("singleplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT").isLoaded))
+            {
+                if (currentHealth.RuntimeValue < 0)
+                {
+                    Debug.Log("You're Dead");
+                    Destroy(gameObject);
+                    SceneManager.LoadScene("gameover");
+                }
+            }
+            
+
+            if (SceneManager.GetSceneByName("multiplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT2").isLoaded))
+            {
+                if (currentHealth.RuntimeValue < 0)
+                {
+                    Debug.Log("You're Dead");
+                    Destroy(gameObject);
+                    SceneManager.LoadScene("gameover2");
+                }
+            }
+        }
+
+
+
+        if (collision.gameObject.tag == "balaInimigo")
+        {
+            currentHealth.RuntimeValue--;
+            playerHealthSignal.Raise();
+            Destroy(collision.gameObject);
+            audioSource.clip = damageaudioClip; ////////////////////////
             audioSource.Play();
             
             if (SceneManager.GetSceneByName("singleplayer").isLoaded || (SceneManager.GetSceneByName("BOSSFIGHT").isLoaded))

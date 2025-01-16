@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+
     private void PlayButtonSound()
     {
         if (audioSource != null && buttonClickSound != null)
@@ -24,12 +25,18 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {   
         Destroy(GameObject.Find("AudioController"));
+        
         PlayButtonSound();
         currentHealth.RuntimeValue = currentHealth.initialValue;
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
         Destroy(GameObject.Find("HealthCanvasp2"));
+        if (!isSceneLoading)
+        {
         SceneManager.LoadScene("Cutscene");
+        }
+        
+        //Destroy(GameObject.Find("Scene Manager"));
     }
 
     public void Credits()
@@ -51,6 +58,7 @@ public class MainMenu : MonoBehaviour
         Destroy(GameObject.Find("ScoreKeeper"));
         Destroy(GameObject.Find("HealthCanvas"));
         Destroy(GameObject.Find("HealthCanvasp2"));
+        
         SceneManager.LoadScene("MainMenu");
     }
 

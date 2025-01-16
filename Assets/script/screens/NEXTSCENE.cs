@@ -9,12 +9,13 @@ public class gotonextscene : MonoBehaviour
     void Start()
     {
         StartCoroutine(NextScene());
+        Destroy(GameObject.Find("Scene Manager"));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Destroy(GameObject.Find("Scene Manager"));
     }
 
     IEnumerator NextScene() 

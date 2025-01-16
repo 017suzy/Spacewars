@@ -13,7 +13,7 @@ public class InimigoVida : MonoBehaviour
     [SerializeField] private AudioClip damageaudioClip;
     private AudioSource audioSource;
 
-    public AudioController vitoria;
+    //public AudioController vitoria;
 
     
     void Start()
@@ -51,8 +51,14 @@ public class InimigoVida : MonoBehaviour
             Destroy(gameObject);
             pointManager.UpdateScore(100);
             barraVida.enabled = false;
-            Time.timeScale = 0f;
-            vitoria.StopBossMusic();
+            Time.timeScale = 0;
+            
+            AudioController[] audios = FindObjectsOfType<AudioController>();
+            foreach (AudioController vitoria in audios)
+            {
+                vitoria.StopBossMusic();
+            }
+
             victorypanel.SetActive(true);
         }
 

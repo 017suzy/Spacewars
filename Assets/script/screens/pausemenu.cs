@@ -9,7 +9,7 @@ public class pausemenu : MonoBehaviour
     public GameObject pausePanel;
     public nave_atirando ShooterAgent;
     //public GameObject playerzero;
-    //public AudioSource resumeAudio; 
+    public AudioSource resumeAudio; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -70,10 +70,10 @@ public class pausemenu : MonoBehaviour
         isPaused = false;
         pausePanel.SetActive(false);
         ShooterAgent.AllowedToShoot = true;
-        //if (resumeAudio != null)
-        //{
-        //    resumeAudio.Play();
-        //}
+        if (resumeAudio != null)
+        {
+            resumeAudio.Play();
+        }
     }
 
 
