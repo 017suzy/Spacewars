@@ -2448,7 +2448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: vida
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: vitoria
