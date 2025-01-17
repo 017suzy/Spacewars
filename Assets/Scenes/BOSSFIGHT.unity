@@ -1609,6 +1609,7 @@ MonoBehaviour:
   resumeAudio: {fileID: 1047456457}
   Audio: {fileID: 1047456459}
   gameplay: {fileID: 8300000, guid: 3fc4fd88519205a47b6e0ac4929ecd3b, type: 3}
+  notWon: 1
 --- !u!114 &638166181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2461,6 +2462,10 @@ PrefabInstance:
       propertyPath: barraVida
       value: 
       objectReference: {fileID: 294850855}
+    - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
+      propertyPath: pausemenu
+      value: 
+      objectReference: {fileID: 638166175}
     - target: {fileID: 5859395685937469771, guid: fa883689e0b537947b0cf4a66658df73, type: 3}
       propertyPath: Victorypanel
       value: 
