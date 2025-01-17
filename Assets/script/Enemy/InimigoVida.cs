@@ -10,8 +10,6 @@ public class InimigoVida : MonoBehaviour
     public float vidaCheia = 100;
     public GameObject explosionPrefab;
     public GameObject victorypanel;
-    public GameObject canvas;
-    
     [SerializeField] private AudioClip damageaudioClip;
     private AudioSource audioSource;
 
@@ -23,8 +21,6 @@ public class InimigoVida : MonoBehaviour
         vidaCheia = vida;  
         pointManager = GameObject.Find("PointManeger").GetComponent<PointManeger>();
         audioSource = GetComponent<AudioSource>(); 
-        canvas = GameObject.Find("Canvas");
-        
  
     }
 
@@ -58,10 +54,8 @@ public class InimigoVida : MonoBehaviour
             Time.timeScale = 0;
             
             vitoria.StopPlayMusic();
-            canvas.GetComponent<pausemenu>().notWon = false;
 
             victorypanel.SetActive(true);
-            
         }
 
     }

@@ -12,7 +12,6 @@ public class pausemenu : MonoBehaviour
     public AudioSource resumeAudio; 
     public AudioController Audio; 
     public AudioClip gameplay;
-    public bool notWon = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +24,7 @@ public class pausemenu : MonoBehaviour
     //[System.Obsolete]
     void Update()
     {
-        if (Input.GetButtonDown("Pause") && notWon){
+        if (Input.GetButtonDown("Pause")){
 
             if (isPaused)
                 ResumeGame();
